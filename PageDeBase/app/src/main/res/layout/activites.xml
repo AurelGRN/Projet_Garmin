@@ -1,0 +1,666 @@
+<!--
+    Fichier XML créé par : FRANCOIS Romain
+    Groupe : Intéraction
+    Intégrateur : [Nom de l'intégrateur]
+    Date de création : 2023-11-29
+    Description : Menu principal pour la liste des activités
+    Version : V.1
+    Dernière modification : 2024-01-12
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Barre supérieure -->
+    <TextView
+        android:id="@+id/top_txt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/bleu"
+        android:gravity="center"
+        android:text="@string/activites"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideLine_top"
+        app:layout_constraintVertical_weight="1"/>
+
+    <!-- Bouton principal -->
+
+    <View
+        android:id="@+id/barHaute"
+        android:layout_width="411dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/black"
+        android:elevation="-4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/trajet_imageProfil"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/transparent"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/recompense_imageButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_top"
+
+        app:srcCompat="@drawable/profil"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <ImageButton
+        android:id="@+id/trajet_imageCoureur"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="@color/transparent"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/recompense_imageButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_top"
+        app:srcCompat="@drawable/coureur" />
+
+    <TextView
+        android:id="@+id/txtDate1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="129dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/date_activite1"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/trajet_imageEtoile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginStart="120dp"
+
+        android:backgroundTint="@color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_weight="0.2"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_top"
+        app:srcCompat="@drawable/etoile" />
+
+    <TextView
+        android:id="@+id/txtLieu1"
+        android:layout_width="242dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="129dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/lieu_activite1"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/barActivite1"
+        android:layout_width="411dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="190dp"
+        android:background="@android:color/black"
+        android:elevation="-4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/trajet_imageCoureur2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="156dp"
+        android:backgroundTint="@color/transparent"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/recompense_imageButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_top"
+        app:srcCompat="@drawable/coureur" />
+
+    <TextView
+        android:id="@+id/txtDate2"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="201dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/date_activite2"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/trajet_imageEtoile2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="156dp"
+
+        android:backgroundTint="@color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_weight="0.2"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_top"
+        app:srcCompat="@drawable/etoile" />
+
+    <TextView
+        android:id="@+id/txtLieu2"
+        android:layout_width="242dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="201dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/lieu_activite2"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/barActivite2"
+        android:layout_width="411dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="260dp"
+        android:background="@android:color/black"
+        android:elevation="-4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/trajet_imageCoureur3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="224dp"
+        android:backgroundTint="@color/transparent"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/recompense_imageButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_top"
+        app:srcCompat="@drawable/coureur" />
+
+
+    <TextView
+        android:id="@+id/txtDate3"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="269dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/date_activite3"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/trajet_imageEtoile3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="224dp"
+
+        android:backgroundTint="@color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_weight="0.2"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_top"
+        app:srcCompat="@drawable/etoile" />
+
+    <TextView
+        android:id="@+id/txtLieu3"
+        android:layout_width="242dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="269dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/lieu_activite3"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/barActivite3"
+        android:layout_width="411dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="328dp"
+        android:background="@android:color/black"
+        android:elevation="-4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/trajet_imageCoureur4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="292dp"
+        android:backgroundTint="@color/transparent"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/recompense_imageButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_top"
+        app:srcCompat="@drawable/coureur" />
+
+    <TextView
+        android:id="@+id/txtDate4"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="337dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/date_activite4"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/trajet_imageEtoile4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="292dp"
+
+        android:backgroundTint="@color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_weight="0.2"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_top"
+        app:srcCompat="@drawable/etoile" />
+
+    <TextView
+        android:id="@+id/txtLieu4"
+        android:layout_width="242dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="337dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/lieu_activite4"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/barActivite4"
+        android:layout_width="411dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="396dp"
+        android:background="@android:color/black"
+        android:elevation="-4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/trajet_imageCoureur5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="360dp"
+        android:backgroundTint="@color/transparent"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/recompense_imageButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_top"
+        app:srcCompat="@drawable/coureur" />
+
+    <TextView
+        android:id="@+id/txtDate5"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="405dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/date_activite5"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/trajet_imageEtoile5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="360dp"
+
+        android:backgroundTint="@color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_weight="0.2"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_top"
+        app:srcCompat="@drawable/etoile" />
+
+    <TextView
+        android:id="@+id/txtLieu5"
+        android:layout_width="242dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="405dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/lieu_activite5"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/barActivite5"
+        android:layout_width="411dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="460dp"
+        android:background="@android:color/black"
+        android:elevation="-4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/trajet_imageCoureur6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="428dp"
+        android:backgroundTint="@color/transparent"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/recompense_imageButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_top"
+        app:srcCompat="@drawable/coureur" />
+
+    <TextView
+        android:id="@+id/txtDate6"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="473dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/date_activite6"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/trajet_imageEtoile6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginStart="120dp"
+
+        android:backgroundTint="@color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_weight="0.2"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_top"
+        app:srcCompat="@drawable/etoile" />
+
+    <TextView
+        android:id="@+id/txtLieu6"
+        android:layout_width="242dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="473dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/lieu_activite5"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/barActivite6"
+        android:layout_width="411dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="530dp"
+        android:background="@android:color/black"
+        android:elevation="-4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/go_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/go_button"
+        android:textSize="40sp"
+        android:backgroundTint="@color/bleu"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/parametre_imageButton"
+        app:layout_constraintStart_toEndOf="@+id/recompense_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_bot"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_weight="0.3"
+        />
+
+    <!-- Images boutons -->
+
+    <ImageButton
+        android:id="@+id/recompense_imageButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:backgroundTint="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/go_btn"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toEndOf="@+id/trajet_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_bot"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_weight="0.2"
+        app:srcCompat="@drawable/recompense" />
+
+    <ImageButton
+        android:id="@+id/trajet_imageButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:backgroundTint="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/recompense_imageButton"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_bot"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_weight="0.2"
+        app:srcCompat="@drawable/trajets" />
+
+    <ImageButton
+        android:id="@+id/partager_imageButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:backgroundTint="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toEndOf="@+id/parametre_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_bot"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_weight="0.2"
+        app:srcCompat="@drawable/partager" />
+
+    <ImageButton
+        android:id="@+id/parametre_imageButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:backgroundTint="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/partager_imageButton"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toEndOf="@+id/go_btn"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_bot"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_weight="0.2"
+        app:srcCompat="@drawable/parametres" />
+
+    <!-- TextView image Button -->
+
+
+    <TextView
+        android:id="@+id/trajet_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trajet_txt"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trajet_imageButton"
+        app:layout_constraintStart_toStartOf="@id/trajet_imageButton"
+        app:layout_constraintEnd_toEndOf="@id/trajet_imageButton"
+        app:layout_constraintVertical_bias="0.2"/>
+
+    <TextView
+        android:id="@+id/recompense_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recompense_txt"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/recompense_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/recompense_imageButton"
+        app:layout_constraintEnd_toEndOf="@id/recompense_imageButton"
+        app:layout_constraintVertical_bias="0.2"/>
+
+
+
+    <TextView
+        android:id="@+id/parametre_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/parametre_txt"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/parametre_imageButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/parametre_imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/parametre_imageButton"
+        app:layout_constraintVertical_bias="0.2"
+        />
+
+    <TextView
+        android:id="@+id/partager_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/partage_txt"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/partager_imageButton"
+        app:layout_constraintEnd_toEndOf="@id/partager_imageButton"
+        app:layout_constraintStart_toStartOf="@+id/partager_imageButton"
+        app:layout_constraintVertical_bias="0.2"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="45sp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="120sp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

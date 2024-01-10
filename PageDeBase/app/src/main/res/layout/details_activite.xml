@@ -1,0 +1,357 @@
+<!--
+    Fichier XML créé par : FRANCOIS Romain
+    Groupe : Intéraction
+    Intégrateur : [Nom de l'intégrateur]
+    Date de création : 2023-11-29
+    Description : Menu principal pour les détails d'une activité
+    Version : V.1
+    Dernière modification : 2024-01-12
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Barre supérieure -->
+    <TextView
+        android:id="@+id/top_txt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/bleu"
+        android:gravity="center"
+        android:text="@string/details_activite"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideLine_top"
+        app:layout_constraintVertical_weight="1"/>
+
+    <ImageButton
+        android:id="@+id/trajet_imageProfil"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/transparent"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/recompense_imageButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_top"
+
+        app:srcCompat="@drawable/profil"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <!-- Bouton principal -->
+    <Button
+        android:id="@+id/go_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/go_button"
+        android:textSize="40sp"
+        android:backgroundTint="@color/bleu"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/parametre_imageButton"
+        app:layout_constraintStart_toEndOf="@+id/recompense_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_bot"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_weight="0.3"
+        />
+
+    <!-- Bouton principal -->
+
+    <TextView
+        android:id="@+id/txtDistanceActivite"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="129dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/distance_activite"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtKM"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="129dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/km"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtDureeActivite"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="129dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/duree_activite"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDureetxt_activite"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="129dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/dureetxt_activite"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtAllure_activite"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/allure_activite"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_KM"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/_km"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtCalories_activite"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/calories_activite"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCaloriestxt_activite"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        android:text="@string/caloriestxt_activite"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/analyse_btn"
+        android:layout_width="189dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginBottom="144dp"
+        android:backgroundTint="@color/gris"
+        android:text="@string/voir_analyse"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_editor_absoluteY="358dp" />
+
+    <ImageButton
+        android:id="@+id/recompense_imageButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:backgroundTint="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/go_btn"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toEndOf="@+id/trajet_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_bot"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_weight="0.2"
+        app:srcCompat="@drawable/recompense" />
+
+    <ImageButton
+        android:id="@+id/trajet_imageButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:backgroundTint="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/recompense_imageButton"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_bot"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_weight="0.2"
+        app:srcCompat="@drawable/trajets" />
+
+    <ImageButton
+        android:id="@+id/partager_imageButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:backgroundTint="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toEndOf="@+id/parametre_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_bot"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_weight="0.2"
+        app:srcCompat="@drawable/partager" />
+
+    <ImageButton
+        android:id="@+id/parametre_imageButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:backgroundTint="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/partager_imageButton"
+        app:layout_constraintHorizontal_weight="0.2"
+        app:layout_constraintStart_toEndOf="@+id/go_btn"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine_bot"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_weight="0.2"
+        app:srcCompat="@drawable/parametres" />
+
+    <!-- TextView image Button -->
+
+
+    <TextView
+        android:id="@+id/trajet_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trajet_txt"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trajet_imageButton"
+        app:layout_constraintStart_toStartOf="@id/trajet_imageButton"
+        app:layout_constraintEnd_toEndOf="@id/trajet_imageButton"
+        app:layout_constraintVertical_bias="0.2"/>
+
+    <TextView
+        android:id="@+id/recompense_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recompense_txt"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/recompense_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/recompense_imageButton"
+        app:layout_constraintEnd_toEndOf="@id/recompense_imageButton"
+        app:layout_constraintVertical_bias="0.2"/>
+
+
+
+    <TextView
+        android:id="@+id/parametre_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/parametre_txt"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/parametre_imageButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/parametre_imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/parametre_imageButton"
+        app:layout_constraintVertical_bias="0.2"
+        />
+
+    <TextView
+        android:id="@+id/partager_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/partage_txt"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/partager_imageButton"
+        app:layout_constraintEnd_toEndOf="@id/partager_imageButton"
+        app:layout_constraintStart_toStartOf="@+id/partager_imageButton"
+        app:layout_constraintVertical_bias="0.2"
+        />
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="412dp"
+        android:layout_height="230dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="275dp"
+        tools:ignore="MissingConstraints">
+        <org.osmdroid.views.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="45sp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="120sp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
