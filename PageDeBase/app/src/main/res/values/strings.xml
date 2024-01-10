@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">PageDeBase</string>
+    <string name="stop">STOP</string>
+
+    <string name="Activite">Activité</string>
+    <string name="Activite_cours">Activité en cours</string>
+    <string name="VitesseM">Vitesse Moyenne (km/h)</string>
+    <string name="DistanceKm">Distance (km)</string>
+    <string name="DistanceMoyenneChiffre">11.98</string>
+    <string name="DistanceKmChiffre">2.51</string>
+    <string name="Duree">Durée (HH:MM:SS)</string>
+    <string name="Temps">00:00:00</string>
+    <string name="TempsFinal">00:12:34</string>
+    <string name="EndActivite">Activité terminé</string>
+    <string name="SaveActivite">Sauvegarde de l"'"activité</string>
+    <string name="NomActivite">Nom de l"'"activité :</string>
+    <string name="EntreeNomActivite">Entrez le nom de l"'"activité</string>
+    <string name="CommentaireNomActivite">Commentaire de l"'"activité :</string>
+    <string name="EntreeCommentaire">Entrez un commentaire</string>
+    <string name="save">SAVE</string>
+    <string name="activiteStop">Activité stoppée</string>
+    <string name="activiteReprise">REPRISE</string>
+    <string name="activiteFin">FIN</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>
