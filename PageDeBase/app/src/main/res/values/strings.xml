@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Run it</string>
+    <string name="parametre_txt">Paramètres</string>
+    <string name="trajet_txt">Trajets</string>
+    <string name="recompense_txt">Récompenses</string>
+    <string name="partage_txt">Partager</string>
+    <string name="go_button">GO</string>
+    <string name="Equipe">Mon Equipe</string>
+    <string name="Connexion">Connexion</string>
+    <string name="Inscription">Inscription</string>
+    <string name="Activite">Activité</string>
+    <string name="Rejoindre">Rejoindre une Equipe</string>
+    <string name="Creer">Créer une Equipe</string>
+    <string name="Utilisateur1_txt">Utilisateur 1</string>
+    <string name="Utilisateur2_txt">Utilisateur 2</string>
+    <string name="Utilisateur3_txt">Utilisateur 3</string>
+    <string name="Utilisateur4_txt">Utilisateur 4</string>
+    <string name="HeureConnexion_txt1">dernière connexion - heure</string>
+    <string name="HeureConnexion_txt2">dernière connexion - heure</string>
+    <string name="HeureConnexion_txt3">dernière connexion - heure</string>
+    <string name="HeureConnexion_txt4">dernière connexion - heure</string>
+    <string name="Equipe1_txt">Equipe 1</string>
+    <string name="Equipe2_txt">Equipe 2</string>
+    <string name="Equipe3_txt">Equipe 3</string>
+    <string name="Equipe4_txt">Equipe 4</string>
+    <string name="NomEquipe_txt">Nom de l équipe :</string>
+    <string name="EntreeEquipe_txt">Entrez le nom de l équipe</string>
+    <string name="CreationEquipe_txt">Création de l équipe</string>
+    <string name="QuitterEquipe_txt">Quitter l équipe</string>
+    <string name="Connexion_txt1">Connexion</string>
+    <string name="Rejoindre_txt1">Rejoins ton Equipe</string>
+    <string name="Rejoindre_txt2">Rejoins l Equipe</string>
+    <string name="EntreeDesciption_txt">Entrez la description</string>
+    <string name="DesciptionEquipe_txt">Description de l équipe:</string>
+    <string name="creer_txt1">Crée ton Equipe</string>
+    <string name="creer_txt2">Crée l Equipe</string>
+    <string name="info_imageButton_description">Description pour le bouton du trajet</string>
+    <string name="info_imageButton_description2">Description pour le bouton de la récompense</string>
+    <string name="info_imageButton_description3">Description pour le bouton paramètre</string>
+    <string name="info_imageButton_description4">Description pour le bouton partagé</string>
+    <string name="info_imageButton_description5">Description pour le bouton permettant accéder au profil</string>
+    <string name="info_imageButton_description6">Description pour le bouton permettant accéder aux informations de léquipe</string>
+    <string name="info_imageButton_description7">Description pour le bouton des messages privés</string>
+    <string name="info_imageButton_description9">Description pour le bouton des messages équipe</string>
+    <string name="info_imageButton_description8">Description pour le bouton permettant déditer</string>
+
+</resources>
