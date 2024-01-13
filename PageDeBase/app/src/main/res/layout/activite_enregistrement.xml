@@ -1,0 +1,141 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txtActivite"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
+        android:background="@color/bleu"
+        android:gravity="center"
+        android:text="@string/Activite"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <!-- Textes associés -->
+
+    <TextView
+        android:id="@+id/txtActiviteEnregistrement"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
+        android:background="@color/vert"
+        android:gravity="center"
+        android:text="@string/EndActivite"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtActivite" />
+
+
+    <TextView
+        android:id="@+id/txtSauvegardeActivite"
+        android:layout_width="339dp"
+        android:layout_height="446dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/gris"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtActiviteEnregistrement" />
+
+    <TextView
+        android:id="@+id/txtSauvegardeDeActivite"
+        android:layout_width="337dp"
+        android:layout_height="36dp"
+        android:text="@string/SaveActivite"
+        android:textAlignment="center"
+        android:textColor="@color/bleu"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNomActivite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtActiviteEnregistrement" />
+
+
+    <TextView
+        android:id="@+id/txtNomActivite"
+        android:layout_width="337dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/NomActivite"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtSauvegardeActivite" />
+
+    <EditText
+        android:id="@+id/editNomActivite"
+        android:layout_width="338dp"
+        android:layout_height="57dp"
+        android:hint="@string/EntreeNomActivite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCommentaireActivite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNomActivite"
+        app:layout_constraintVertical_bias="0.0"
+        android:autofillHints=""
+        android:inputType="" />
+
+    <TextView
+        android:id="@+id/txtCommentaireActivite"
+        android:layout_width="337dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/CommentaireNomActivite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editCommentaireActivite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editCommentaireActivite"
+        android:layout_width="339dp"
+        android:layout_height="102dp"
+        android:layout_marginBottom="96dp"
+        android:hint="@string/EntreeCommentaire"
+        android:inputType="textMultiLine"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSauvegardeActivite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="77dp"
+        android:layout_height="81dp"
+        android:backgroundTint="@color/vert"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barView" />
+
+    <View
+        android:id="@+id/barView"
+        android:layout_width="411dp"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        android:elevation="-4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSauvegardeActivite" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
