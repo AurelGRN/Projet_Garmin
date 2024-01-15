@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtActivite"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
+        android:background="@color/bleu"
+        android:gravity="center"
+        android:text="@string/Activite"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/txtActiviteCours"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
+        android:background="@color/bleu_clair"
+        android:gravity="center"
+        android:text="@string/Activite_cours"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtActivite" />
+
+
+    <TextView
+        android:id="@+id/txtVitesseMoyenne"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="14dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/VitesseM"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/barVitesse_Distance"
+        app:layout_constraintEnd_toEndOf="@+id/bar_MilieuTableau"
+        app:layout_constraintEnd_toStartOf="@+id/bar_MilieuTableau"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barDuree"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/txtDistancekm"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/DistanceKm"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/barVitesse_Distance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/bar_MilieuTableau"
+        app:layout_constraintTop_toBottomOf="@+id/barDuree"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/txtVitesse"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/DistanceMoyenneChiffre"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/barView"
+        app:layout_constraintEnd_toEndOf="@+id/bar_MilieuTableau"
+        app:layout_constraintEnd_toStartOf="@+id/bar_MilieuTableau"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barVitesse_Distance"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/txtKM"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/DistanceKmChiffre"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/barView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/bar_MilieuTableau"
+        app:layout_constraintStart_toStartOf="@+id/bar_MilieuTableau"
+        app:layout_constraintTop_toBottomOf="@+id/barVitesse_Distance"
+        app:layout_constraintVertical_bias="0.454"
+        app:layout_editor_absoluteX="506dp"
+        app:layout_editor_absoluteY="700dp" />
+
+    <Button
+        android:id="@+id/btnstop"
+        android:layout_width="107dp"
+        android:layout_height="108dp"
+        android:backgroundTint="@color/bleu_clair"
+        android:text="@string/stop"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/barView"
+        android:layout_width="411dp"
+        android:layout_height="4dp"
+        android:layout_marginBottom="104dp"
+        android:background="@android:color/black"
+        android:elevation="-4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/barDuree"
+        android:layout_width="411dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="452dp"
+        android:background="@android:color/black"
+        android:elevation="-4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/barVitesse_Distance"
+        android:layout_width="411dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="504dp"
+        android:background="@android:color/black"
+        android:elevation="-4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/bar_MilieuTableau"
+        android:layout_width="4dp"
+        android:layout_height="200dp"
+        android:background="@android:color/black"
+        android:elevation="-4dp"
+        app:layout_constraintBottom_toTopOf="@+id/barView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barDuree"
+        app:layout_constraintVertical_bias="0.817" />
+
+
+    <TextView
+        android:id="@+id/txtDuree"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="356dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/Duree"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/chronometer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/Temps"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/barDuree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/mapLayout"
+        android:layout_width="412dp"
+        android:layout_height="257dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtDuree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtActiviteCours"
+        tools:ignore="MissingConstraints"></RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
